@@ -1,1 +1,127 @@
+{
+  "module": {
+    "name": "Project Manifestation",
+    "version": "1.0.0",
+    "category": "replicator-foundations",
+    "summary": "Foundational research module for matter-on-demand systems, nanoscale assembly, programmable materials, and early replicator-class technologies.",
+    "purpose": "Provide the structural, computational, and conceptual substrate for open, long-arc research into matter synthesis and early replicator frameworks. This module defines the operators, regimes, and structural grammars used throughout the Manifestation project."
+  },
+
+  "files": [
+    {
+      "path": "overview/mission.md",
+      "role": "profile",
+      "analyzer_layer": "operator",
+      "description": "Defines the mission, scope, and long-arc intent of Project Manifestation."
+    },
+    {
+      "path": "overview/roadmap.md",
+      "role": "profile",
+      "analyzer_layer": "regime",
+      "description": "Outlines the multi-phase roadmap for replicator-class research and development."
+    },
+    {
+      "path": "overview/use-of-rtt.md",
+      "role": "profile",
+      "analyzer_layer": "cross-cutting",
+      "description": "Explains how RTT/1, RTT/2, and RTT/3 power the structural clarity and coherence of the project."
+    },
+
+    {
+      "path": "specs/module.json",
+      "role": "signature",
+      "analyzer_layer": "operator",
+      "description": "Canonical manifest describing the identity, structure, and purpose of the Manifestation module."
+    },
+    {
+      "path": "specs/operators.md",
+      "role": "engine",
+      "analyzer_layer": "operator",
+      "description": "Defines the operator grammar for matter synthesis, nanoscale assembly, and energy-to-structure transitions."
+    },
+    {
+      "path": "specs/session-context.md",
+      "role": "engine",
+      "analyzer_layer": "coherence",
+      "description": "Provides the session context block for structural AIs working within the Manifestation project."
+    },
+
+    {
+      "path": "research/papers.md",
+      "role": "reference",
+      "analyzer_layer": "cross-cutting",
+      "description": "Index of foundational papers, models, and open research questions."
+    },
+    {
+      "path": "research/simulations.md",
+      "role": "engine",
+      "analyzer_layer": "dimensional",
+      "description": "Simulation engines and datasets for nanoscale assembly and matter formation."
+    },
+    {
+      "path": "research/open-questions.md",
+      "role": "map",
+      "analyzer_layer": "regime",
+      "description": "Structured list of unresolved scientific questions guiding long-arc research."
+    },
+
+    {
+      "path": "students/getting-started.md",
+      "role": "example",
+      "analyzer_layer": "operator",
+      "description": "Student onboarding guide for contributing to Project Manifestation."
+    },
+    {
+      "path": "students/tasks.md",
+      "role": "example",
+      "analyzer_layer": "regime",
+      "description": "Structured list of student-friendly research tasks and contribution pathways."
+    },
+    {
+      "path": "students/contribute.md",
+      "role": "template",
+      "analyzer_layer": "cross-cutting",
+      "description": "Contribution guidelines for students, researchers, and structural AIs."
+    },
+
+    {
+      "path": "ai/prompts.md",
+      "role": "engine",
+      "analyzer_layer": "operator",
+      "description": "RTT-aligned prompt structures for structural AIs assisting with research."
+    },
+    {
+      "path": "ai/agents.md",
+      "role": "engine",
+      "analyzer_layer": "coherence",
+      "description": "Definitions and behaviors of AI agents supporting the Manifestation project."
+    },
+    {
+      "path": "ai/rtt-integration.md",
+      "role": "reference",
+      "analyzer_layer": "cross-cutting",
+      "description": "Technical notes on integrating RTT engines into simulations and research workflows."
+    }
+  ],
+
+  "exports": [
+    "overview/mission.md",
+    "overview/roadmap.md",
+    "overview/use-of-rtt.md",
+    "specs/operators.md",
+    "research/simulations.md"
+  ],
+
+  "imports": [
+    {
+      "module": "RTT",
+      "version": "3.x",
+      "paths": [
+        "operators/",
+        "engines/",
+        "coherence/"
+      ]
+    }
+  ]
+}
 
